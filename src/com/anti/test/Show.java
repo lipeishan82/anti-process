@@ -1,6 +1,5 @@
 package com.anti.test;
-/*
- * 
+/** 
  * 显示界面
  * 
  * FileName: Show.java
@@ -20,6 +19,7 @@ public class Show {
 		System.out.print("                        2.疫情具体信息查询                             \n");
 		System.out.print("                        3.疫情具体信息录入                             \n");
 		System.out.print("                        4.疫情信息图表显示                             \n");
+		System.out.print("                        5.退出系统                                           \n");
 		System.out.print("---------------------------------------------------------------\n");
 		Scanner out = new Scanner(System.in);
 		System.out.println("请输入您的选择：");
@@ -33,6 +33,7 @@ public class Show {
 		        		System.out.print("***1.某天确诊信息查询(输入日期)   \n");
 		        		System.out.print("***2.最近信息查询(输入学号)   \n");
 		        		System.out.print("***3.具体信息查询(输入学号和日期)  \n");
+		        		System.out.print("***4.返回上一级\n");
 		        		//Scanner out = new Scanner(System.in);
 		    			System.out.println("请输入您的选择：");
 		    			int c= out.nextInt();
@@ -115,18 +116,19 @@ public class Show {
 					System.out.println("default,please input choice number:");
 				     break;
 			}
-			System.out.println("\n若要结束请输入0，否则输入选项号码继续查询!\n\n");
+			//System.out.println("\n若要结束请输入0，否则输入选项号码继续查询!\n\n");
 
 			System.out.print("---------------------------- 疫情数据 -------------------------\n");
 				System.out.print("                        1.当前确诊信息查看                             \n");
 				System.out.print("                        2.疫情具体信息查询                             \n");
 				System.out.print("                        3.疫情具体信息录入                             \n");
 				System.out.print("                        4.疫情信息图表显示                             \n");
+				System.out.print("                        5.退出系统                                          \n");
 				System.out.print("---------------------------------------------------------------\n");
 			System.out.println("请输入您的选择：");
 				a= out.nextInt();
 		}
-		if(a==0) {
+		if(a==5) {
 			System.out.print("已退出!");
 			System.exit(0);
 		}
