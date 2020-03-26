@@ -27,7 +27,7 @@ import com.anti.utils.JDBCUtils;
 
 public class ChartTest {
 	//某天确诊人数统计
-	public void getChart1(int date) throws SQLException {
+	public void getChartSex(int date) throws SQLException {
 		Connection conn=null;
 		Statement stmt=null;
 		ResultSet rs=null;		
@@ -68,7 +68,7 @@ public class ChartTest {
 		}  
 	}
 	//近一周确诊人数
-	public void getChart2() throws SQLException {
+	public void getChartDate() throws SQLException {
 		Connection conn=null;
 		Statement stmt=null;
 		ResultSet rs=null;		
@@ -108,7 +108,7 @@ public class ChartTest {
 	}
 	
 	//本月信息统计
-	public void getChart3() throws SQLException {
+	public void getChartDtime() throws SQLException {
 		Connection conn=null;
 		Statement stmt=null;
 		ResultSet rs=null;		
@@ -147,7 +147,7 @@ public class ChartTest {
 		}  
 	}
 	//上一个月信息统计
-		public void getChart4() throws SQLException {
+		public void getChartSexDate() throws SQLException {
 			Connection conn=null;
 			Statement stmt=null;
 			ResultSet rs=null;		
@@ -187,7 +187,7 @@ public class ChartTest {
 		}
 		//柱状图显示设置
 		public void SHOW(JFreeChart freeChart,int width,int height) {
-			//以面板显示，创建一个图表面板
+		//以面板显示，创建一个图表面板
 		ChartPanel chartPanel=new ChartPanel(freeChart);
 		//设置大小
 		chartPanel.setPreferredSize(new java.awt.Dimension(560,400));
